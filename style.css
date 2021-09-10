@@ -86,6 +86,13 @@ hr{
 				border-radius: 0.1px;
 }
 
+.maintenance {
+				font-family: 'Josefin Sans', sans-serif;
+				color: #a555ff;
+}
+.nondisplay {
+				display: none;
+}
 .loading {
   display: flex;
   justify-content: center;
