@@ -5,17 +5,13 @@
 <meta name="msapplication-navbutton-color" content="#9142ff" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CurrX - Live Currency Exchange Rates</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <script src="script.js"></script>
-    <script src="load.js"></script>
-    <script src="redirect.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js" integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg==" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon-32x32.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
     </style>
     <body>
@@ -32,13 +28,11 @@
 												<nav class="nav">
 																<a class="nav__link" href="https://pranavswebportal.ml">Pranav's Web Portal</a>
 																<a class="nav__link" href="https://weatheral.ml">Weatheral - Live Weather WebApp</a>
-																<a class="nav__link" href="">Help & Feedback</a>
-																
-																
-																
+																<a class="nav__link" href="">Help & Feedback</a>											
 												</nav>
 								</div>
 				</div>
+				
 				<section>
 								<div id="center_box">
 								<article id="top_intro">
@@ -48,109 +42,392 @@
 												
 								</article>
 								</div>
-								<br><br><br><br>
-								<fieldset class="maintenance">
-        				<h2>Website Under Maintenance</h2><br>
-        				<h3>Website is closed for a limited period for a maintenance, due to change in European Central Bank's Policy. We are currently working on to fix this, and in addition we are also working to add on some new, useful and exciting features. We request you to please check back in few days.</h3>
-        </fieldset>
+								
 
 
-        <form class="nondisplay">
-        			
-        								<fieldset>
-        												
-        												<legend>Choose Currency</legend>
-        												<div id="fieldset">
-        												<div id="box_one">
-        												<div class="select_box">
-        												<label>Base Currency</label>
-            <select id="base_cur">
-            				<option value="usd">US Dollar (USD)</option>
-            				<option value="cad">Canadian Dollar (CAD)</option>
-            				<option value="hkd">Hong Kong Dollar (HKD)</option>
-            				<option value="isk">Icelandic Krona (ISK)</option>
-            				<option value="php">Philippine Peso (PHP)</option>
-            				<option value="dkk">Danish Krone (DKK)</option>
-            				<option value="huf">Hungarian Forint (HUF)</option>
-            				<option value="czk">Czech Koruna (CZK)</option>
-            				<option value="gbp">Pound Sterling (GBP)</option>
-            				<option value="ron">Romanian Leu (RON)</option>
-            				<option value="sek">Swedish Krona (SEK)</option>
-            				<option value="idr">Indonesian Rupiah (IDR)</option>
-            				<option value="inr">Indian Rupee (INR)</option>
-            				<option value="brl">Brazilian Real (BRL)</option>
-            				<option value="rub">Russian Rouble (RUB)</option>
-            				<option value="hrk">Croatian Kuna (HRK)</option>
-            				<option value="jpy">Japanese Yen (JPY)</option>
-            				<option value="thb">Thai Baht (THB)</option>
-            				<option value="chf">Swiss Franc (CHF)</option>
-            				<option value="eur">European Euro (EUR)</option>
-            				<option value="myr">Malaysian Ringgit (MYR)</option>
-            				<option value="bgn">Bulgarian Lev (BGN)</option>
-            				<option value="try">Turkish Lira (TRY)</option>
-            				<option value="cny">Chinese Yuan Renminbi (CNY)</option>
-            				<option value="nok">Norwegian Krone (NOK)</option>
-            				<option value="nzd">New Zealand Dollar (NZD)</option>
-            				<option value="zar">South African Rand (ZAR)</option>
-            				<option value="mxn">Maxican Peso (MXN)</option>
-            				<option value="sgd">Singapore Dollar (SGD)</option>
-            				<option value="aud">Australian Dollar (AUD)</option>
-            				<option value="ils">Israeli Shekel (ILS)</option>
-            				<option value="krw">South Korean Won (KRW)</option>
-            				<option value="pln">Polish Zloty (PLN)</option>
+        <form>
+        			<fieldset>							
+        					<legend>Choose Currency</legend>	
+        					<div class="grid">
+        					<div class="grid_element top_grid_element">
+        									<lable>Amount</lable>
+            <input type="number" class="inpbox" value="1" step="any" id="conv_amount" >
+            </div>
+            
+            <div class="grid_element">
+            				<lable>From</lable>
+            <select id="base_curr">
+            				<option value="INR">Indian rupee</options>
+            				<option value="USD">United States dollar</options>
+            				<option value="AED">United Arab Emirates dirham</options>      				
+<option value="AFN">Afghan Afghani</options>
+<option value="ALL">Albanian lek</options>
+<option value="AMD">Armenian dram</options>
+<option value="ANG">Netherlands</options>ntillean guilder</options>
+<option value="AOA">Angolan kwanza</options>
+<option value="ARS">Argentine peso</options>
+<option value="AUD">Australian dollar</options>
+<option value="AWG">Aruban florin</options>
+<option value="AZN">Azerbaijani manat</options>
+<option value="BAM">Bosnia</options>nd Herzegovina convertible mark</options>
+<option value="BBD">Barbadian dollar</options>
+<option value="BDT">Bangladeshi taka</options>
+<option value="BGN">Bulgarian lev</options>
+<option value="BHD">Bahraini dinar</options>
+<option value="BIF">Burundian franc</options>
+<option value="BMD">Bermudian dollar</options>
+<option value="BND">Brunei dollar</options>
+<option value="BOB">Bolivian boliviano</options>
+<option value="BRL">Brazilian real</options>
+<option value="BSD">Bahamian dollar</options>
+<option value="BTN">Bhutanese ngultrum</options>
+<option value="BWP">Botswana pula</options>
+<option value="BYN">Belarusian ruble</options>
+<option value="BZD">Belize dollar</options>
+<option value="CAD">Canadian dollar</options>
+<option value="CDF">Congolese franc</options>
+<option value="CHF">Swiss franc</options>
+<option value="CLP">Chilean peso</options>
+<option value="CNY">Renminbi</options>
+<option value="COP">Colombian peso</options>
+<option value="CRC">Costa Rican colón</options>
+<option value="CUC">Cuban convertible peso</options>
+<option value="CUP">Cuban peso</options>
+<option value="CVE">Cape Verdean escudo</options>
+<option value="CZK">Czech koruna</options>
+<option value="DJF">Djiboutian franc</options>
+<option value="DKK">Danish krone</options>
+<option value="DOP">Dominican peso</options>
+<option value="DZD">Algerian dinar</options>
+<option value="EGP">Egyptian pound</options>
+<option value="ERN">Eritrean nakfa</options>
+<option value="ETB">Ethiopian birr</options>
+<option value="EUR">Euro</options>
+<option value="FJD">Fijian dollar</options>
+<option value="FKP">Falkland Islands pound</options>
+<option value="GBP">Pound sterling</options>
+<option value="GEL">Georgian lari</options>
+<option value="GGP">Guernsey pound</options>
+<option value="GHS">Ghanaian cedi</options>
+<option value="GIP">Gibraltar pound</options>
+<option value="GMD">Gambian dalasi</options>
+<option value="GNF">Guinean franc</options>
+<option value="GTQ">Guatemalan quetzal</options>
+<option value="GYD">Guyanese dollar</options>
+<option value="HKD">Hong Kong dollar</options>
+<option value="HNL">Honduran lempira</options>
+<option value="HRK">Croatian kuna</options>
+<option value="HTG">Haitian gourde</options>
+<option value="HUF">Hungarian forint</options>
+<option value="IDR">Indonesian rupiah</options>
+<option value="ILS">Israeli new shekel</options>
+<option value="IMP">Manx pound</options>
+<option value="INR">Indian rupee</options>
+<option value="IQD">Iraqi dinar</options>
+<option value="IRR">Iranian rial</options>
+<option value="ISK">Icelandic króna</options>
+<option value="JEP">Jersey pound</options>
+<option value="JMD">Jamaican dollar</options>
+<option value="JOD">Jordanian dinar</options>
+<option value="JPY">Japanese yen</options>
+<option value="KES">Kenyan shilling</options>
+<option value="KGS">Kyrgyzstani som</options>
+<option value="KHR">Cambodian riel</options>
+<option value="KMF">Comorian franc</options>
+<option value="KRW">South Korean won</options>
+<option value="KWD">Kuwaiti dinar</options>
+<option value="KYD">Cayman Islands dollar</options>
+<option value="KZT">Kazakhstani tenge</options>
+<option value="LAK">Lao kip</options>
+<option value="LBP">Lebanese pound</options>
+<option value="LKR">Sri Lankan rupee</options>
+<option value="LRD">Liberian dollar</options>
+<option value="LSL">Lesotho loti</options>
+<option value="LYD">Libyan dinar</options>
+<option value="MAD">Moroccan dirham</options>
+<option value="MDL">Moldovan leu</options>
+<option value="MGA">Malagasy</options>riary</options>
+<option value="MKD">Macedonian denar</options>
+<option value="MMK">Burmese kyat</options>
+<option value="MNT">Mongolian tögrög</options>
+<option value="MOP">Macanese pataca</options>
+<option value="MRU">Mauritanian ouguiya</options>
+<option value="MUR">Mauritian rupee</options>
+<option value="MVR">Maldivian rufiyaa</options>
+<option value="MWK">Malawian kwacha</options>
+<option value="MXN">Mexican peso</options>
+<option value="MYR">Malaysian ringgit</options>
+<option value="MZN">Mozambican metical</options>
+<option value="NAD">Namibian dollar</options>
+<option value="NGN">Nigerian naira</options>
+<option value="NIO">Nicaraguan córdoba</options>
+<option value="NOK">Norwegian krone</options>
+<option value="NPR">Nepalese rupee</options>
+<option value="NZD">New Zealand dollar</options>
+<option value="OMR">Omani rial</options>
+<option value="PAB">Panamanian balboa</options>
+<option value="PEN">Peruvian sol</options>
+<option value="PGK">Papua New Guinean kina</options>
+<option value="PHP">Philippine peso</options>
+<option value="PKR">Pakistani rupee</options>
+<option value="PLN">Polish złoty</options>
+<option value="PYG">Paraguayan guaraní</options>
+<option value="QAR">Qatari riyal</options>
+<option value="RON">Romanian leu</options>
+<option value="RSD">Serbian dinar</options>
+<option value="RUB">Russian ruble</options>
+<option value="RWF">Rwandan franc</options>
+<option value="SAR">Saudi riyal</options>
+<option value="SBD">Solomon Islands dollar</options>
+<option value="SCR">Seychellois rupee</options>
+<option value="SDG">Sudanese pound</options>
+<option value="SEK">Swedish krona</options>
+<option value="SGD">Singapore dollar</options>
+<option value="SHP">Saint Helena pound</options>
+<option value="SLL">Sierra Leonean leone</options>
+<option value="SOS">Somali shilling</options>
+<option value="SRD">Surinamese dollar</options>
+<option value="SSP">South Sudanese pound</options>
+<option value="STN">São Tomé and Príncipe dobra</options>
+<option value="SVC">Salvadoran colón</options>
+<option value="SYP">Syrian pound</options>
+<option value="SZL">Swazi lilangeni</options>
+<option value="THB">Thai baht</options>
+<option value="TJS">Tajikistani somoni</options>
+<option value="TMT">Turkmenistan manat</options>
+<option value="TND">Tunisian dinar</option>
+<option value="TOP">Tongan paʻanga</options>
+<option value="TRY">Turkish lira</options>
+<option value="TTD">Trinidad</options>nd Tobago dollar</options>
+<option value="TWD">New Taiwan dollar</options>
+<option value="TZS">Tanzanian shilling</options>
+<option value="UAH">Ukrainian hryvnia</options>
+<option value="UGX">Ugandan shilling</option>
+<option value="UYU">Uruguayan peso</options>
+<option value="UZS">Uzbekistani soʻm</options>
+<option value="VES">Venezuelan bolívar</options>
+<option value="VND">Vietnamese đồng</options>
+<option value="VUV">Vanuatu vatu</options>
+<option value="WST">Samoan tālā</options>
+<option value="XAF">Central</options>frican CFA franc</options>
+<option value="XAG">Silver (troy ounce)</options>
+<option value="XAU">Gold (troy ounce)</options>
+<option value="XCD">Eastern Caribbean dollar</options>
+<option value="XDR">Special drawing rights</options>
+<option value="XOF">West african CFA franc</options>
+<option value="XPF">CFP franc</options>
+<option value="YER">Yemeni rial</options>
+<option value="ZAR">South african rand</options>
+<option value="ZMW">Zambian kwacha</options>
+<option value="ZWL">Zimbabwean dollar</options>
             </select>
             </div>
-            <br>
-            <div class="select_box">
-            <label>Conversion Currency</label>
-            <select id="currency">
-            				<option value="usd">US Dollar (USD)</option>
-            				<option value="cad">Canadian Dollar (CAD)</option>
-            				<option value="hkd">Hong Kong Dollar (HKD)</option>
-            				<option value="isk">Icelandic Krona (ISK)</option>
-            				<option value="php">Philippine Peso (PHP)</option>
-            				<option value="dkk">Danish Krone (DKK)</option>
-            				<option value="huf">Hungarian Forint (HUF)</option>
-            				<option value="czk">Czech Koruna (CZK)</option>
-            				<option value="gbp">Pound Sterling (GBP)</option>
-            				<option value="ron">Romanian Leu (RON)</option>
-            				<option value="sek">Swedish Krona (SEK)</option>
-            				<option value="idr">Indonesian Rupiah (IDR)</option>
-            				<option value="inr">Indian Rupee (INR)</option>
-            				<option value="brl">Brazilian Real (BRL)</option>
-            				<option value="rub">Russian Rouble (RUB)</option>
-            				<option value="hrk">Croatian Kuna (HRK)</option>
-            				<option value="jpy">Japanese Yen (JPY)</option>
-            				<option value="thb">Thai Baht (THB)</option>
-            				<option value="chf">Swiss Franc (CHF)</option>
-            				<option value="eur">European Euro (EUR)</option>
-            				<option value="myr">Malaysian Ringgit (MYR)</option>
-            				<option value="bgn">Bulgarian Lev (BGN)</option>
-            				<option value="try">Turkish Lira (TRY)</option>
-            				<option value="cny">Chinese Yuan Renminbi (CNY)</option>
-            				<option value="nok">Norwegian Krone (NOK)</option>
-            				<option value="nzd">New Zealand Dollar (NZD)</option>
-            				<option value="zar">South African Rand (ZAR)</option>
-            				<option value="mxn">Maxican Peso (MXN)</option>
-            				<option value="sgd">Singapore Dollar (SGD)</option>
-            				<option value="aud">Australian Dollar (AUD)</option>
-            				<option value="ils">Israeli Shekel (ILS)</option>
-            				<option value="krw">South Korean Won (KRW)</option>
-            				<option value="pln">Polish Zloty (PLN)</option>
+            
+            <div class="grid_element">
+            				<lable>To</lable>
+            <select id="conv_curr">
+            				
+            				<option value="INR">Indian rupee</options>
+            		   <option value="USD">United States dollar</options>
+            				<option value="AED">United Arab Emirates dirham</options>
+												<option value="AFN">Afghan Afghani</options>
+<option value="ALL">Albanian lek</options>
+<option value="AMD">Armenian dram</options>
+<option value="ANG">Netherlands</options>ntillean guilder</options>
+<option value="AOA">Angolan kwanza</options>
+<option value="ARS">Argentine peso</options>
+<option value="AUD">Australian dollar</options>
+<option value="AWG">Aruban florin</options>
+<option value="AZN">Azerbaijani manat</options>
+<option value="BAM">Bosnia</options>nd Herzegovina convertible mark</options>
+<option value="BBD">Barbadian dollar</options>
+<option value="BDT">Bangladeshi taka</options>
+<option value="BGN">Bulgarian lev</options>
+<option value="BHD">Bahraini dinar</options>
+<option value="BIF">Burundian franc</options>
+<option value="BMD">Bermudian dollar</options>
+<option value="BND">Brunei dollar</options>
+<option value="BOB">Bolivian boliviano</options>
+<option value="BRL">Brazilian real</options>
+<option value="BSD">Bahamian dollar</options>
+<option value="BTN">Bhutanese ngultrum</options>
+<option value="BWP">Botswana pula</options>
+<option value="BYN">Belarusian ruble</options>
+<option value="BZD">Belize dollar</options>
+<option value="CAD">Canadian dollar</options>
+<option value="CDF">Congolese franc</options>
+<option value="CHF">Swiss franc</options>
+<option value="CLP">Chilean peso</options>
+<option value="CNY">Renminbi</options>
+<option value="COP">Colombian peso</options>
+<option value="CRC">Costa Rican colón</options>
+<option value="CUC">Cuban convertible peso</options>
+<option value="CUP">Cuban peso</options>
+<option value="CVE">Cape Verdean escudo</options>
+<option value="CZK">Czech koruna</options>
+<option value="DJF">Djiboutian franc</options>
+<option value="DKK">Danish krone</options>
+<option value="DOP">Dominican peso</options>
+<option value="DZD">Algerian dinar</options>
+<option value="EGP">Egyptian pound</options>
+<option value="ERN">Eritrean nakfa</options>
+<option value="ETB">Ethiopian birr</options>
+<option value="EUR">Euro</options>
+<option value="FJD">Fijian dollar</options>
+<option value="FKP">Falkland Islands pound</options>
+<option value="GBP">Pound sterling</options>
+<option value="GEL">Georgian lari</options>
+<option value="GGP">Guernsey pound</options>
+<option value="GHS">Ghanaian cedi</options>
+<option value="GIP">Gibraltar pound</options>
+<option value="GMD">Gambian dalasi</options>
+<option value="GNF">Guinean franc</options>
+<option value="GTQ">Guatemalan quetzal</options>
+<option value="GYD">Guyanese dollar</options>
+<option value="HKD">Hong Kong dollar</options>
+<option value="HNL">Honduran lempira</options>
+<option value="HRK">Croatian kuna</options>
+<option value="HTG">Haitian gourde</options>
+<option value="HUF">Hungarian forint</options>
+<option value="IDR">Indonesian rupiah</options>
+<option value="ILS">Israeli new shekel</options>
+<option value="IMP">Manx pound</options>
+<option value="INR">Indian rupee</options>
+<option value="IQD">Iraqi dinar</options>
+<option value="IRR">Iranian rial</options>
+<option value="ISK">Icelandic króna</options>
+<option value="JEP">Jersey pound</options>
+<option value="JMD">Jamaican dollar</options>
+<option value="JOD">Jordanian dinar</options>
+<option value="JPY">Japanese yen</options>
+<option value="KES">Kenyan shilling</options>
+<option value="KGS">Kyrgyzstani som</options>
+<option value="KHR">Cambodian riel</options>
+<option value="KMF">Comorian franc</options>
+<option value="KRW">South Korean won</options>
+<option value="KWD">Kuwaiti dinar</options>
+<option value="KYD">Cayman Islands dollar</options>
+<option value="KZT">Kazakhstani tenge</options>
+<option value="LAK">Lao kip</options>
+<option value="LBP">Lebanese pound</options>
+<option value="LKR">Sri Lankan rupee</options>
+<option value="LRD">Liberian dollar</options>
+<option value="LSL">Lesotho loti</options>
+<option value="LYD">Libyan dinar</options>
+<option value="MAD">Moroccan dirham</options>
+<option value="MDL">Moldovan leu</options>
+<option value="MGA">Malagasy</options>riary</options>
+<option value="MKD">Macedonian denar</options>
+<option value="MMK">Burmese kyat</options>
+<option value="MNT">Mongolian tögrög</options>
+<option value="MOP">Macanese pataca</options>
+<option value="MRU">Mauritanian ouguiya</options>
+<option value="MUR">Mauritian rupee</options>
+<option value="MVR">Maldivian rufiyaa</options>
+<option value="MWK">Malawian kwacha</options>
+<option value="MXN">Mexican peso</options>
+<option value="MYR">Malaysian ringgit</options>
+<option value="MZN">Mozambican metical</options>
+<option value="NAD">Namibian dollar</options>
+<option value="NGN">Nigerian naira</options>
+<option value="NIO">Nicaraguan córdoba</options>
+<option value="NOK">Norwegian krone</options>
+<option value="NPR">Nepalese rupee</options>
+<option value="NZD">New Zealand dollar</options>
+<option value="OMR">Omani rial</options>
+<option value="PAB">Panamanian balboa</options>
+<option value="PEN">Peruvian sol</options>
+<option value="PGK">Papua New Guinean kina</options>
+<option value="PHP">Philippine peso</options>
+<option value="PKR">Pakistani rupee</options>
+<option value="PLN">Polish złoty</options>
+<option value="PYG">Paraguayan guaraní</options>
+<option value="QAR">Qatari riyal</options>
+<option value="RON">Romanian leu</options>
+<option value="RSD">Serbian dinar</options>
+<option value="RUB">Russian ruble</options>
+<option value="RWF">Rwandan franc</options>
+<option value="SAR">Saudi riyal</options>
+<option value="SBD">Solomon Islands dollar</options>
+<option value="SCR">Seychellois rupee</options>
+<option value="SDG">Sudanese pound</options>
+<option value="SEK">Swedish krona</options>
+<option value="SGD">Singapore dollar</options>
+<option value="SHP">Saint Helena pound</options>
+<option value="SLL">Sierra Leonean leone</options>
+<option value="SOS">Somali shilling</options>
+<option value="SRD">Surinamese dollar</options>
+<option value="SSP">South Sudanese pound</options>
+<option value="STN">São Tomé and Príncipe dobra</options>
+<option value="SVC">Salvadoran colón</options>
+<option value="SYP">Syrian pound</options>
+<option value="SZL">Swazi lilangeni</options>
+<option value="THB">Thai baht</options>
+<option value="TJS">Tajikistani somoni</options>
+<option value="TMT">Turkmenistan manat</options>
+<option value="TND">Tunisian dinar<option value="
+<option value="TOP">Tongan paʻanga</options>
+<option value="TRY">Turkish lira</options>
+<option value="TTD">Trinidad</options>nd Tobago dollar</options>
+<option value="TWD">New Taiwan dollar</options>
+<option value="TZS">Tanzanian shilling</options>
+<option value="UAH">Ukrainian hryvnia</options>
+<option value="UGX">Ugandan shilling</options>
+<option value="UYU">Uruguayan peso</options>
+<option value="UZS">Uzbekistani soʻm</options>
+<option value="VES">Venezuelan bolívar</options>
+<option value="VND">Vietnamese đồng</options>
+<option value="VUV">Vanuatu vatu</options>
+<option value="WST">Samoan tālā</options>
+<option value="XAF">Central</options>frican CFA franc</options>
+<option value="XAG">Silver (troy ounce)</options>
+<option value="XAU">Gold (troy ounce)</options>
+<option value="XCD">Eastern Caribbean dollar</options>
+<option value="XDR">Special drawing rights</options>
+<option value="XOF">West african CFA franc</options>
+<option value="XPF">CFP franc</options>
+<option value="YER">Yemeni rial</options>
+<option value="ZAR">South african rand</options>
+<option value="ZMW">Zambian kwacha</options>
+<option value="ZWL">Zimbabwean dollar</options>
             </select>
             </div>
-            <br>
-            <button><input type="image" src="img/arrow_swap.png" id="submit"></button>
             </div>
+            <button id="button_submit">
+            				<input type="image" src="img/arrow_swap.png" id="submit">
+            </button>
+            
             
             <hr id="hr">
             <br id="br">
             <div id="result">
+            				<strong>
+            								1.0000 INR =
+<h1 id="result_h1">1.0000 INR</h1>
+<br><br>
+
+Rate for 1 INR = 1.0000
+            				</strong>
             </div>
-            </div>
+            
             </fieldset>
         </form>
         
+        <section id="Terms">
+        				<div>
+        								<h1><span class="material-icons">
+warning
+</span> NOTE</h1>
+        								<p>
+        												CurrX cannot guarantee the accuracy of the exchange rates displayed. You should confirm current rates before making any transactions that could be affected by changes in the exchange rates.
+        								</p>
+        				</div>
+        				<div>
+        								<p>
+        												All data and information is provided "as is" for informational purposes only, and is not intended for trading purposes or financial, investment, tax, legal, accounting or other advice. Please consult your broker or financial representative to verify pricing before executing any trade. CurrX is not an investment adviser, financial adviser or a securities broker. None of the data and information constitutes investment advice nor an offering, recommendation or solicitation by CurrX to buy, sell or hold any security or financial product, and CurrX makes no representation (and has no opinion) regarding the advisability or suitability of any investment.
+        								</p>
+        				</div>
+        </section>
         
 
 
@@ -163,10 +440,8 @@
         				<br>
         				<div class="credits">
         								<p class="Credits_hed">Powered By</p>
-        								
-        								&
-        								<p class="Credits_hed">In Partnership With</p><br><br>
-        								<a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"><img src="img/logo_only.svg" alt="European Central Bank" class="support_img whtb"></a><br><b>European Central Bank</b><br><br><br>
+        								<br><br>
+        							
         								
         								<a href="https://github.com"><img src="img/github.png" alt="GitHub" class="support_img"></a><br><b>GitHub</b>
         								<br><br><br>
@@ -177,17 +452,19 @@
         				<hr class="hr">
         				<div class="footer_element">
         								<a href="" class="footer_element_text">Help & Support</a>
+        								
         								<br>
         								<a href="" class="footer_element_text">Feedback</a>
         								<br>
         								<a href="https://github.com/Pranavs-edu-Tec-OpenSource/CurrX" class="footer_element_text">Open Source Repository</a>
         								<br>
-        								<a>v 1.1.0</a>
+        								<a>v 1.2.0</a>
         				</div>
         				<div class="footer_contact">
         								
         				</div>
         				</center>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
